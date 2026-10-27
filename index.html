@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corner Bean Coffee | Your Neighborhood Coffee Shop</title>
+  <style>
+    :root {
+      --espresso: #3b2418;
+      --roast: #6f4e37;
+      --cream: #f7efe6;
+      --latte: #e6d3bd;
+      --accent: #c8792f;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: var(--cream);
+      color: var(--espresso);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 8%;
+      background: var(--espresso);
+      color: var(--cream);
+    }
+    header .logo { font-size: 1.4rem; font-weight: bold; letter-spacing: 1px; }
+    nav a { margin-left: 1.5rem; font-size: 0.95rem; }
+    nav a:hover { color: var(--accent); }
+    .hero {
+      text-align: center;
+      padding: 6rem 8%;
+      background: linear-gradient(rgba(59,36,24,.75), rgba(59,36,24,.75)), var(--roast);
+      color: var(--cream);
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; max-width: 560px; margin: 0 auto 2rem; }
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .btn:hover { background: #a86222; }
+    section { padding: 4rem 8%; }
+    h2 { text-align: center; font-size: 2rem; margin-bottom: 2rem; }
+    .about p { max-width: 700px; margin: 0 auto; text-align: center; }
+    .menu { background: var(--latte); }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .item {
+      background: var(--cream);
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .item h3 { margin-bottom: 0.4rem; }
+    .item .price { color: var(--accent); font-weight: bold; margin-top: 0.5rem; }
+    .visit { text-align: center; }
+    .visit p { margin-bottom: 0.4rem; }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: var(--espresso);
+      color: var(--latte);
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2.2rem; }
+      nav a { margin-left: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">&#9749; Corner Bean</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Freshly Roasted. Locally Loved.</h1>
+    <p>Small-batch coffee, warm pastries, and a seat with your name on it.</p>
+    <a href="#menu" class="btn">See the Menu</a>
+  </div>
+
+  <section id="about" class="about">
+    <h2>Our Story</h2>
+    <p>
+      Corner Bean is a family-run coffee shop serving the neighborhood since 2015.
+      We source our beans from small farms, roast them in-house, and bake our
+      pastries fresh every morning. Come for the coffee, stay for the company.
+    </p>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>Favorites</h2>
+    <div class="menu-grid">
+      <div class="item">
+        <h3>Espresso</h3>
+        <p>Rich, bold, and perfectly pulled.</p>
+        <div class="price">$3.00</div>
+      </div>
+      <div class="item">
+        <h3>Cappuccino</h3>
+        <p>Velvety milk foam over a double shot.</p>
+        <div class="price">$4.50</div>
+      </div>
+      <div class="item">
+        <h3>Cold Brew</h3>
+        <p>Steeped for 18 hours, served over ice.</p>
+        <div class="price">$4.75</div>
+      </div>
+      <div class="item">
+        <h3>Butter Croissant</h3>
+        <p>Flaky, golden, baked daily.</p>
+        <div class="price">$3.50</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" class="visit">
+    <h2>Visit Us</h2>
+    <p><strong>123 Main Street</strong>, Your Town</p>
+    <p>Mon&ndash;Fri: 7am &ndash; 6pm</p>
+    <p>Sat&ndash;Sun: 8am &ndash; 4pm</p>
+  </section>
+
+  <footer>
+    &copy; 2026 Corner Bean Coffee. All rights reserved.
+  </footer>
+
+</body>
+</html>
